@@ -10,14 +10,14 @@ Cerita dan kumpulan skrip optimasi Windows yang saya pakai sejak era laptop Inte
 
 - [W10_dev_performance_safe.bat](file:///c:/Hack~MyWin/scripts/W10_dev_performance_safe.bat)
 - Fokus: tweak konservatif yang reversible untuk developer
-- Menjaga: Windows Update, Defender, audio, kamera, Windows Search
+- Menjaga: Windows Update, Defender, Windows Search
 - Tweak: power plan High Performance, tampilkan file extensions/hidden files, telemetry Basic, disable CEIP tasks, kurangi suggestion/ads
 
 2. Profil Ekstrem (Warisan/Eksperimen)
 
 - [W10b0sstT0MM11Y.bat](file:///c:/Hack~MyWin/W10b0sstT0MM11Y.bat)
 - Fokus: memeras performa di hardware sangat lemah (disable layanan/tasks, hapus bloat, blokir domain update, utak‑atik registry)
-- Dampak: terasa lebih enteng, tetapi mematikan update/Defender, rename DLL `wu*`, memblokir domain Microsoft, dan menonaktifkan layanan penting (Audio/Themes/Spooler/Search). Tidak disarankan untuk penggunaan harian di 2025
+- Dampak: terasa lebih enteng, tetapi mematikan update/Defender, rename DLL `wu*`, memblokir domain Microsoft, dan menonaktifkan layanan penting (Themes/Spooler/Search). Tidak disarankan untuk penggunaan harian di 2025
 
 ## Struktur Repo (Ringkas)
 
@@ -58,7 +58,7 @@ PS> ls -Recurse *.ps*1 | Unblock-File
 ## Rollback dan Recovery
 
 - Profil Aman: perubahan ringan dan reversible (Explorer/ContentDelivery/telemetry Basic). Bisa kembalikan manual atau via Policy Editor
-- Profil Ekstrem: rollback sulit. Opsi: System Restore (jika aktif), SFC/DISM (`sfc /scannow`, `DISM /Online /Cleanup-Image /RestoreHealth`), cek layanan penting (AudioSrv, Themes, Spooler, WSearch, BITS, wuauserv) dan set kembali StartupType ke Automatic/Manual, pulihkan file/hosts asli. Sangat disarankan di VM
+- Profil Ekstrem: rollback sulit. Opsi: System Restore (jika aktif), SFC/DISM (`sfc /scannow`, `DISM /Online /Cleanup-Image /RestoreHealth`), cek layanan penting ( Themes, Spooler, WSearch, BITS, wuauserv) dan set kembali StartupType ke Automatic/Manual, pulihkan file/hosts asli. Sangat disarankan di VM
 
 ## Kompatibilitas
 
